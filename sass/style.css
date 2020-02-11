@@ -1,0 +1,107 @@
+/*!
+Auteur: Jean Saposhnikov
+*/
+/* ------------------------------------------------------------
+   horaire
+--------------------------------------------------------------*/
+body {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: 'jours' 'heures' 'cours';
+  -ms-grid-columns: auto auto auto auto auto auto auto auto;
+      grid-template-columns: auto auto auto auto auto auto auto auto;
+  border: 1px solid black;
+}
+
+div {
+  border: 1px solid black;
+}
+
+.jours:nth-child(1) {
+  -ms-grid-column: 2;
+  grid-column: 2;
+}
+
+.heure {
+  -ms-grid-column: 1;
+  grid-column: 1;
+}
+
+#lundi {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 4;
+  grid-row: 2/6;
+}
+
+#mardi1 {
+  -ms-grid-column: 3;
+  grid-column: 3;
+  -ms-grid-row: 6;
+  -ms-grid-row-span: 2;
+  grid-row: 6/8;
+}
+
+#mardi2 {
+  -ms-grid-column: 3;
+  grid-column: 3;
+  -ms-grid-row: 8;
+  -ms-grid-row-span: 4;
+  grid-row: 8/12;
+}
+
+#mercredi1 {
+  -ms-grid-column: 4;
+  grid-column: 4;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 3;
+  grid-row: 2/5;
+}
+
+#mercredi2 {
+  -ms-grid-column: 4;
+  grid-column: 4;
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 1;
+  grid-row: 5/6;
+}
+
+#mercredi3 {
+  -ms-grid-column: 4;
+  grid-column: 4;
+  -ms-grid-row: 7;
+  -ms-grid-row-span: 4;
+  grid-row: 7/11;
+}
+
+#jeudi {
+  -ms-grid-column: 5;
+  grid-column: 5;
+  -ms-grid-row: 6;
+  -ms-grid-row-span: 2;
+  grid-row: 6/8;
+}
+
+#vendredi1 {
+  -ms-grid-column: 6;
+  grid-column: 6;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  grid-row: 2/4;
+}
+
+#vendredi2 {
+  -ms-grid-column: 6;
+  grid-column: 6;
+  -ms-grid-row: 6;
+  -ms-grid-row-span: 5;
+  grid-row: 6/11;
+}
+
+.ProgVeille {
+  background-color: orange;
+}
+
+/*--------------------------------------------------------------*/
+/*# sourceMappingURL=style.css.map */
